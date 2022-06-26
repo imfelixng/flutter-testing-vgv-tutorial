@@ -89,5 +89,13 @@ void main() {
         expect(result, 5.0, reason: 'It should be exactly 5');
       },
     );
+
+    test(
+      'the calculator throws an ArgumentError when dividing by zero',
+      () {
+        final calculator = Calculator();
+        expect(() => calculator.divide(10, 0), throwsArgumentError);
+      },
+    );
   });
 }
