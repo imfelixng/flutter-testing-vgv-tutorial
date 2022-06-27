@@ -102,7 +102,7 @@ class _OperationsTabState extends State<OperationsTab> {
           ),
           ButtonBar(
             children: [
-              OutlineButton(
+              TextButton(
                 child: Text('Clear'),
                 onPressed: () {
                   setState(() {
@@ -113,7 +113,7 @@ class _OperationsTabState extends State<OperationsTab> {
                   });
                 },
               ),
-              OutlineButton(
+              TextButton(
                 child: Text('Save'),
                 onPressed: _isSaveButtonEnabled ? () {} : null,
               ),
@@ -141,7 +141,7 @@ class _OperationsTabState extends State<OperationsTab> {
       case Operations.add:
         return widget.calculator.add(a, b);
       case Operations.substract:
-        return widget.calculator.substract(a, b);
+        return widget.calculator.subtract(a, b);
       case Operations.multiply:
         return widget.calculator.multiply(a, b);
       case Operations.divide:

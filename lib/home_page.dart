@@ -22,11 +22,11 @@ class _HomePageState extends State<HomePage> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.table_chart),
-            title: Text('Operations'),
+            label: 'Operations',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.history),
-            title: Text('History'),
+            label: 'History',
           ),
         ],
         onTap: (index) {
